@@ -1,0 +1,173 @@
+[gd_scene load_steps=23 format=3 uid="uid://clhsujedqhibp"]
+
+[ext_resource type="Texture2D" uid="uid://dfatr7yhk3t4w" path="res://Assets/PixelRouletteNumS.png" id="1_m5jcx"]
+[ext_resource type="Script" path="res://Scripts/Kolonne1.gd" id="2_u72pw"]
+[ext_resource type="Script" path="res://Scripts/Kolonne2.gd" id="3_gek1v"]
+[ext_resource type="Script" path="res://Scripts/Kolonne3.gd" id="4_63y3t"]
+[ext_resource type="Script" path="res://Scripts/1-18.gd" id="5_dbn1o"]
+[ext_resource type="Script" path="res://Scripts/19-36.gd" id="6_rmww2"]
+[ext_resource type="Script" path="res://Scripts/1_12.gd" id="7_jnmyi"]
+[ext_resource type="Script" path="res://Scripts/2_12.gd" id="8_6b7x1"]
+[ext_resource type="Script" path="res://Scripts/3_12.gd" id="9_8daeg"]
+[ext_resource type="Script" path="res://Scripts/Even.gd" id="10_umi2j"]
+[ext_resource type="Script" path="res://Scripts/Odd.gd" id="11_o20te"]
+[ext_resource type="Script" path="res://Scripts/Red.gd" id="12_tt5ch"]
+[ext_resource type="Script" path="res://Scripts/Black.gd" id="13_srdol"]
+[ext_resource type="Texture2D" uid="uid://cv3snvwev1nns" path="res://Assets/16x16Btn.png" id="15_j6y8t"]
+[ext_resource type="Script" path="res://Scripts/ChipSelect.gd" id="16_4m0b1"]
+[ext_resource type="Texture2D" uid="uid://bld3p1ejccopq" path="res://Assets/Chips/5Chip.png" id="16_t2pu5"]
+[ext_resource type="Texture2D" uid="uid://doo62w5lw1sty" path="res://Assets/16x16BtnDisabled.png" id="17_4lw7h"]
+[ext_resource type="AudioStream" uid="uid://dnk81k4hcgxdl" path="res://Assets/Select.wav" id="17_fs7ug"]
+[ext_resource type="Texture2D" uid="uid://qsr2xxle51k2" path="res://Assets/16x16BtnPlay.png" id="18_mp8rr"]
+[ext_resource type="Script" path="res://Scripts/PlayBtn.gd" id="20_8jf2e"]
+[ext_resource type="FontFile" uid="uid://c60js1pfa2rw5" path="res://Assets/8biz.ttf" id="21_o5wny"]
+[ext_resource type="Script" path="res://Scripts/Bank.gd" id="22_rngh4"]
+
+[node name="Bet" type="Node2D"]
+
+[node name="PixelRouletteNumS" type="Sprite2D" parent="."]
+texture = ExtResource("1_m5jcx")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(4, 4)
+
+[node name="SelectSFX" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("17_fs7ug")
+
+[node name="Kolonne1" type="Button" parent="."]
+offset_left = 97.0
+offset_top = -46.0
+offset_right = 110.0
+offset_bottom = -33.0
+focus_mode = 0
+flat = true
+script = ExtResource("2_u72pw")
+
+[node name="Kolonne2" type="Button" parent="."]
+offset_left = 97.0
+offset_top = -31.0
+offset_right = 110.0
+offset_bottom = -17.0
+focus_mode = 0
+flat = true
+script = ExtResource("3_gek1v")
+
+[node name="Kolonne3" type="Button" parent="."]
+offset_left = 97.0
+offset_top = -15.0
+offset_right = 110.0
+offset_bottom = -2.0
+focus_mode = 0
+flat = true
+script = ExtResource("4_63y3t")
+
+[node name="1-18" type="Button" parent="."]
+offset_left = -94.0
+offset_top = 1.0
+offset_right = -1.0
+offset_bottom = 15.0
+focus_mode = 0
+flat = true
+script = ExtResource("5_dbn1o")
+
+[node name="19-36" type="Button" parent="."]
+offset_left = 1.0
+offset_top = 1.0
+offset_right = 94.0
+offset_bottom = 15.0
+focus_mode = 0
+flat = true
+script = ExtResource("6_rmww2")
+
+[node name="1_12" type="Button" parent="."]
+offset_left = -94.0
+offset_top = 17.0
+offset_right = -33.0
+offset_bottom = 31.0
+focus_mode = 0
+flat = true
+script = ExtResource("7_jnmyi")
+
+[node name="2_12" type="Button" parent="."]
+offset_left = -31.0
+offset_top = 17.0
+offset_right = 31.0
+offset_bottom = 31.0
+focus_mode = 0
+flat = true
+script = ExtResource("8_6b7x1")
+
+[node name="3_12" type="Button" parent="."]
+offset_left = 33.0
+offset_top = 17.0
+offset_right = 94.0
+offset_bottom = 31.0
+focus_mode = 0
+flat = true
+script = ExtResource("9_8daeg")
+
+[node name="Even" type="Button" parent="."]
+offset_left = -94.0
+offset_top = 33.0
+offset_right = -49.0
+offset_bottom = 46.0
+focus_mode = 0
+flat = true
+script = ExtResource("10_umi2j")
+
+[node name="Odd" type="Button" parent="."]
+offset_left = 49.0
+offset_top = 33.0
+offset_right = 94.0
+offset_bottom = 46.0
+focus_mode = 0
+flat = true
+script = ExtResource("11_o20te")
+
+[node name="Red" type="Button" parent="."]
+offset_left = -47.0
+offset_top = 33.0
+offset_right = -1.0
+offset_bottom = 46.0
+focus_mode = 0
+flat = true
+script = ExtResource("12_tt5ch")
+
+[node name="Black" type="Button" parent="."]
+offset_left = 1.0
+offset_top = 33.0
+offset_right = 47.0
+offset_bottom = 46.0
+focus_mode = 0
+flat = true
+script = ExtResource("13_srdol")
+
+[node name="ChipSelect" type="TextureButton" parent="."]
+offset_left = 98.0
+offset_top = 2.0
+offset_right = 114.0
+offset_bottom = 18.0
+texture_normal = ExtResource("15_j6y8t")
+script = ExtResource("16_4m0b1")
+
+[node name="Chip" type="Sprite2D" parent="ChipSelect"]
+position = Vector2(8, 8)
+texture = ExtResource("16_t2pu5")
+
+[node name="PlayBtn" type="TextureButton" parent="."]
+offset_left = 98.0
+offset_top = 20.0
+offset_right = 114.0
+offset_bottom = 36.0
+texture_normal = ExtResource("18_mp8rr")
+texture_disabled = ExtResource("17_4lw7h")
+script = ExtResource("20_8jf2e")
+
+[node name="Bank" type="RichTextLabel" parent="."]
+offset_left = -95.0
+offset_top = -55.0
+offset_bottom = -47.0
+theme_override_fonts/normal_font = ExtResource("21_o5wny")
+theme_override_font_sizes/normal_font_size = 8
+text = "Bank: ?"
+script = ExtResource("22_rngh4")
