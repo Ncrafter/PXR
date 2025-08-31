@@ -7,6 +7,10 @@ Godot Version: Start: 4.2.2.stable --> Now: 4.2.2.stable
 
 Roadmap
 ---
--Adding Bet Limitation<br>
+v0.0.3
+-
 -Adding Visual Bets<br>
--...
+
+Planned
+-
+-Main Menu
