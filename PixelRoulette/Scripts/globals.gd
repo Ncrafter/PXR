@@ -16,6 +16,9 @@ var SChip=5
 
 var bet=0
 
+var LRL=false
+var LL=0
+
 var num=0
 
 var Bank=300

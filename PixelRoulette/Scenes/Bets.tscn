@@ -1,5 +1,6 @@
-[gd_scene load_steps=23 format=3 uid="uid://clhsujedqhibp"]
+[gd_scene load_steps=24 format=3 uid="uid://clhsujedqhibp"]
 
+[ext_resource type="Script" path="res://Scripts/Bets.gd" id="1_gsq68"]
 [ext_resource type="Texture2D" uid="uid://dfatr7yhk3t4w" path="res://Assets/PixelRouletteNumS.png" id="1_m5jcx"]
 [ext_resource type="Script" path="res://Scripts/Kolonne1.gd" id="2_u72pw"]
 [ext_resource type="Script" path="res://Scripts/Kolonne2.gd" id="3_gek1v"]
@@ -24,6 +25,7 @@
 [ext_resource type="Script" path="res://Scripts/Bank.gd" id="22_rngh4"]
 
 [node name="Bet" type="Node2D"]
+script = ExtResource("1_gsq68")
 
 [node name="PixelRouletteNumS" type="Sprite2D" parent="."]
 texture = ExtResource("1_m5jcx")
