@@ -1,31 +1,32 @@
 extends Button
 
 func _pressed():
-	Globals.D3+=Globals.SChip
-	Globals.bbet[25]+=Globals.SChip
-	Globals.bbet[26]+=Globals.SChip
-	Globals.bbet[27]+=Globals.SChip
-	Globals.bbet[28]+=Globals.SChip
-	Globals.bbet[29]+=Globals.SChip
-	Globals.bbet[30]+=Globals.SChip
-	Globals.bbet[31]+=Globals.SChip
-	Globals.bbet[32]+=Globals.SChip
-	Globals.bbet[33]+=Globals.SChip
-	Globals.bbet[34]+=Globals.SChip
-	Globals.bbet[35]+=Globals.SChip
-	Globals.bbet[36]+=Globals.SChip
-	Globals.brew[25]+=Globals.SChip*3
-	Globals.brew[26]+=Globals.SChip*3
-	Globals.brew[27]+=Globals.SChip*3
-	Globals.brew[28]+=Globals.SChip*3
-	Globals.brew[29]+=Globals.SChip*3
-	Globals.brew[30]+=Globals.SChip*3
-	Globals.brew[31]+=Globals.SChip*3
-	Globals.brew[32]+=Globals.SChip*3
-	Globals.brew[33]+=Globals.SChip*3
-	Globals.brew[34]+=Globals.SChip*3
-	Globals.brew[35]+=Globals.SChip*3
-	Globals.brew[36]+=Globals.SChip*3
+	if Globals.Bank>Globals.SChip:
+		Globals.D3+=Globals.SChip
+		Globals.bbet[25]+=Globals.SChip
+		Globals.bbet[26]+=Globals.SChip
+		Globals.bbet[27]+=Globals.SChip
+		Globals.bbet[28]+=Globals.SChip
+		Globals.bbet[29]+=Globals.SChip
+		Globals.bbet[30]+=Globals.SChip
+		Globals.bbet[31]+=Globals.SChip
+		Globals.bbet[32]+=Globals.SChip
+		Globals.bbet[33]+=Globals.SChip
+		Globals.bbet[34]+=Globals.SChip
+		Globals.bbet[35]+=Globals.SChip
+		Globals.bbet[36]+=Globals.SChip
+		Globals.brew[25]+=Globals.SChip*3
+		Globals.brew[26]+=Globals.SChip*3
+		Globals.brew[27]+=Globals.SChip*3
+		Globals.brew[28]+=Globals.SChip*3
+		Globals.brew[29]+=Globals.SChip*3
+		Globals.brew[30]+=Globals.SChip*3
+		Globals.brew[31]+=Globals.SChip*3
+		Globals.brew[32]+=Globals.SChip*3
+		Globals.brew[33]+=Globals.SChip*3
+		Globals.brew[34]+=Globals.SChip*3
+		Globals.brew[35]+=Globals.SChip*3
+		Globals.brew[36]+=Globals.SChip*3
 	
 	Globals.bet-=Globals.SChip
 	Globals.Bank-=Globals.SChip

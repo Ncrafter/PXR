@@ -14,6 +14,8 @@ config/name="PixelRoulette"
 config/version="0.01"
 run/main_scene="res://Scenes/Bets.tscn"
 config/features=PackedStringArray("4.2", "Mobile")
+boot_splash/bg_color=Color(0, 0, 0, 1)
+boot_splash/image="res://Assets/PXRBootIcon.png"
 config/icon="res://Assets/PXRIcon.png"
 
 [autoload]

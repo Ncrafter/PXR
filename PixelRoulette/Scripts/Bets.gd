@@ -1,6 +1,11 @@
 extends Node2D
 
 func _ready():
+	if Globals.FirstBoot:
+		Globals.FirstBoot=false
+		$BootSFX.play()
+	else:
+		$ReturnSFX.play()
 	Globals.bbet.fill(0)
 	Globals.brew.fill(0)
 	Globals.bet=0

@@ -1,5 +1,7 @@
 extends Node
 
+var FirstBoot=true
+
 var K1=0
 var K2=0
 var K3=0

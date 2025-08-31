@@ -1,9 +1,11 @@
-[gd_scene load_steps=24 format=3 uid="uid://clhsujedqhibp"]
+[gd_scene load_steps=26 format=3 uid="uid://clhsujedqhibp"]
 
 [ext_resource type="Script" path="res://Scripts/Bets.gd" id="1_gsq68"]
 [ext_resource type="Texture2D" uid="uid://dfatr7yhk3t4w" path="res://Assets/PixelRouletteNumS.png" id="1_m5jcx"]
 [ext_resource type="Script" path="res://Scripts/Kolonne1.gd" id="2_u72pw"]
 [ext_resource type="Script" path="res://Scripts/Kolonne2.gd" id="3_gek1v"]
+[ext_resource type="AudioStream" uid="uid://bngc6c3myshv4" path="res://Assets/Boot.wav" id="3_gsn5p"]
+[ext_resource type="AudioStream" uid="uid://deebvim103waj" path="res://Assets/Return.wav" id="4_7csyg"]
 [ext_resource type="Script" path="res://Scripts/Kolonne3.gd" id="4_63y3t"]
 [ext_resource type="Script" path="res://Scripts/1-18.gd" id="5_dbn1o"]
 [ext_resource type="Script" path="res://Scripts/19-36.gd" id="6_rmww2"]
@@ -32,6 +34,12 @@ texture = ExtResource("1_m5jcx")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 zoom = Vector2(4, 4)
+
+[node name="BootSFX" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_gsn5p")
+
+[node name="ReturnSFX" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("4_7csyg")
 
 [node name="SelectSFX" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("17_fs7ug")
