@@ -2,12 +2,12 @@
 
 [ext_resource type="Texture2D" uid="uid://cso2y7dltwhfn" path="res://Assets/numBG.png" id="1_oljuk"]
 [ext_resource type="AudioStream" uid="uid://baxwt4qdashky" path="res://Assets/Lose.wav" id="2_d6t1h"]
-[ext_resource type="Script" path="res://Scripts/Rand.gd" id="2_h3n82"]
+[ext_resource type="Script" uid="uid://chjnviavmrb4j" path="res://Scripts/Rand.gd" id="2_h3n82"]
 [ext_resource type="AudioStream" uid="uid://cwpc00li3opfq" path="res://Assets/Win.wav" id="2_yge7x"]
-[ext_resource type="Script" path="res://Scripts/Bank.gd" id="3_qkqyp"]
+[ext_resource type="Script" uid="uid://bmhf3q8x782d" path="res://Scripts/Bank.gd" id="3_qkqyp"]
 [ext_resource type="FontFile" uid="uid://c60js1pfa2rw5" path="res://Assets/8biz.ttf" id="3_qoaf2"]
 [ext_resource type="Texture2D" uid="uid://3bp0vpoa06bo" path="res://Assets/BackBTN.png" id="5_vtbs6"]
-[ext_resource type="Script" path="res://Scripts/BackBTN.gd" id="6_fk4vn"]
+[ext_resource type="Script" uid="uid://bdrt6x02obvq8" path="res://Scripts/BackBTN.gd" id="6_fk4vn"]
 
 [node name="Num" type="Node2D"]
 
