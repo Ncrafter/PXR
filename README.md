@@ -7,7 +7,7 @@ Godot Version: Start: 4.2.2.stable --> Now: 4.2.2.stable
 
 Roadmap
 ---
-10.0.2B
+v0.0.2B
 -
 Upgrading Godot Versions
 
