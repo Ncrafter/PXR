@@ -1,7 +1,7 @@
 extends Button
 
 func _pressed():
-	if Globals.Bank>Globals.SChip:
+	if Globals.Bank>=Globals.SChip:
 		Globals.K1+=Globals.SChip
 		Globals.bbet[3]+=Globals.SChip
 		Globals.bbet[6]+=Globals.SChip
@@ -28,8 +28,10 @@ func _pressed():
 		Globals.brew[33]+=Globals.SChip*3
 		Globals.brew[36]+=Globals.SChip*3
 	
-	Globals.bet-=Globals.SChip
-	Globals.Bank-=Globals.SChip
+		Globals.bet-=Globals.SChip
+		Globals.Bank-=Globals.SChip
+		$"../SelectSFX".play()
+	else:
+		$"../UnavaiableSFX".play()
 	
-	$"../SelectSFX".play()
 	print("Kolonne1:",Globals.K1,"(",Globals.SChip,")")

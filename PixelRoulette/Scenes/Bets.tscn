@@ -1,4 +1,4 @@
-[gd_scene load_steps=26 format=3 uid="uid://clhsujedqhibp"]
+[gd_scene load_steps=27 format=3 uid="uid://clhsujedqhibp"]
 
 [ext_resource type="Script" path="res://Scripts/Bets.gd" id="1_gsq68"]
 [ext_resource type="Texture2D" uid="uid://dfatr7yhk3t4w" path="res://Assets/PixelRouletteNumS.png" id="1_m5jcx"]
@@ -9,6 +9,7 @@
 [ext_resource type="Script" path="res://Scripts/Kolonne3.gd" id="4_63y3t"]
 [ext_resource type="Script" path="res://Scripts/1-18.gd" id="5_dbn1o"]
 [ext_resource type="Script" path="res://Scripts/19-36.gd" id="6_rmww2"]
+[ext_resource type="AudioStream" uid="uid://d0e78r3ojfiy6" path="res://Assets/Unavaiable.wav" id="6_wi0ar"]
 [ext_resource type="Script" path="res://Scripts/1_12.gd" id="7_jnmyi"]
 [ext_resource type="Script" path="res://Scripts/2_12.gd" id="8_6b7x1"]
 [ext_resource type="Script" path="res://Scripts/3_12.gd" id="9_8daeg"]
@@ -43,6 +44,9 @@ stream = ExtResource("4_7csyg")
 
 [node name="SelectSFX" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("17_fs7ug")
+
+[node name="UnavaiableSFX" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("6_wi0ar")
 
 [node name="Kolonne1" type="Button" parent="."]
 offset_left = 97.0
