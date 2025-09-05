@@ -1,4 +1,4 @@
-[gd_scene load_steps=27 format=3 uid="uid://clhsujedqhibp"]
+[gd_scene load_steps=30 format=3 uid="uid://clhsujedqhibp"]
 
 [ext_resource type="Script" uid="uid://blr766lc111e5" path="res://Scripts/Bets.gd" id="1_gsq68"]
 [ext_resource type="Texture2D" uid="uid://dfatr7yhk3t4w" path="res://Assets/PixelRouletteNumS.png" id="1_m5jcx"]
@@ -10,6 +10,7 @@
 [ext_resource type="Script" uid="uid://ctpli2wyr30hb" path="res://Scripts/1-18.gd" id="5_dbn1o"]
 [ext_resource type="Script" uid="uid://bio8q68e1milu" path="res://Scripts/19-36.gd" id="6_rmww2"]
 [ext_resource type="AudioStream" uid="uid://d0e78r3ojfiy6" path="res://Assets/Unavaiable.wav" id="6_wi0ar"]
+[ext_resource type="AudioStream" uid="uid://c2ngsdssad3gt" path="res://Assets/Reset.wav" id="7_dnuwy"]
 [ext_resource type="Script" uid="uid://bfmjechagj4og" path="res://Scripts/1_12.gd" id="7_jnmyi"]
 [ext_resource type="Script" uid="uid://xemvipqpgxbb" path="res://Scripts/2_12.gd" id="8_6b7x1"]
 [ext_resource type="Script" uid="uid://camoebs3jy2qj" path="res://Scripts/3_12.gd" id="9_8daeg"]
@@ -26,6 +27,8 @@
 [ext_resource type="Script" uid="uid://bf3fpea4dsu5r" path="res://Scripts/PlayBtn.gd" id="20_8jf2e"]
 [ext_resource type="FontFile" uid="uid://c60js1pfa2rw5" path="res://Assets/8biz.ttf" id="21_o5wny"]
 [ext_resource type="Script" uid="uid://bmhf3q8x782d" path="res://Scripts/Bank.gd" id="22_rngh4"]
+[ext_resource type="Texture2D" uid="uid://bccqaehfvpk80" path="res://Assets/reset.png" id="27_yssff"]
+[ext_resource type="Script" uid="uid://dsry4tw6espgu" path="res://Scripts/rest_btn.gd" id="28_dnuwy"]
 
 [node name="Bet" type="Node2D"]
 script = ExtResource("1_gsq68")
@@ -47,6 +50,18 @@ stream = ExtResource("17_fs7ug")
 
 [node name="UnavaiableSFX" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("6_wi0ar")
+
+[node name="ResetSFX" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("7_dnuwy")
+
+[node name="Bank" type="RichTextLabel" parent="."]
+offset_left = -95.0
+offset_top = -55.0
+offset_bottom = -47.0
+theme_override_fonts/normal_font = ExtResource("21_o5wny")
+theme_override_font_sizes/normal_font_size = 8
+text = "Bank: ?"
+script = ExtResource("22_rngh4")
 
 [node name="Kolonne1" type="Button" parent="."]
 offset_left = 97.0
@@ -177,11 +192,10 @@ texture_normal = ExtResource("18_mp8rr")
 texture_disabled = ExtResource("17_4lw7h")
 script = ExtResource("20_8jf2e")
 
-[node name="Bank" type="RichTextLabel" parent="."]
-offset_left = -95.0
-offset_top = -55.0
-offset_bottom = -47.0
-theme_override_fonts/normal_font = ExtResource("21_o5wny")
-theme_override_font_sizes/normal_font_size = 8
-text = "Bank: ?"
-script = ExtResource("22_rngh4")
+[node name="RestBTN" type="TextureButton" parent="."]
+offset_left = -113.0
+offset_top = 1.0
+offset_right = -97.0
+offset_bottom = 17.0
+texture_normal = ExtResource("27_yssff")
+script = ExtResource("28_dnuwy")

@@ -1,9 +1,10 @@
-[gd_scene load_steps=9 format=3 uid="uid://gtai5fr05v0p"]
+[gd_scene load_steps=10 format=3 uid="uid://gtai5fr05v0p"]
 
 [ext_resource type="Texture2D" uid="uid://cso2y7dltwhfn" path="res://Assets/numBG.png" id="1_oljuk"]
 [ext_resource type="AudioStream" uid="uid://baxwt4qdashky" path="res://Assets/Lose.wav" id="2_d6t1h"]
 [ext_resource type="Script" uid="uid://chjnviavmrb4j" path="res://Scripts/Rand.gd" id="2_h3n82"]
 [ext_resource type="AudioStream" uid="uid://cwpc00li3opfq" path="res://Assets/Win.wav" id="2_yge7x"]
+[ext_resource type="AudioStream" uid="uid://d0e78r3ojfiy6" path="res://Assets/Unavaiable.wav" id="3_f8jm2"]
 [ext_resource type="Script" uid="uid://bmhf3q8x782d" path="res://Scripts/Bank.gd" id="3_qkqyp"]
 [ext_resource type="FontFile" uid="uid://c60js1pfa2rw5" path="res://Assets/8biz.ttf" id="3_qoaf2"]
 [ext_resource type="Texture2D" uid="uid://3bp0vpoa06bo" path="res://Assets/BackBTN.png" id="5_vtbs6"]
@@ -16,6 +17,9 @@ stream = ExtResource("2_yge7x")
 
 [node name="LoseSFX" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("2_d6t1h")
+
+[node name="UnavaiableSFX" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_f8jm2")
 
 [node name="BG" type="Sprite2D" parent="."]
 texture = ExtResource("1_oljuk")

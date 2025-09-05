@@ -7,8 +7,10 @@ func _ready():
 	Globals.Bank+=Globals.brew[Globals.num]
 	if Globals.brew[Globals.num]>0:
 		$"../WinSFX".play()
-	else:
+	else: if Globals.bet+Globals.brew[Globals.num]<0:
 		$"../LoseSFX".play()
+	else:
+		$"../UnavaiableSFX".play()
 	get_node("Profits").text=str(Globals.bet+Globals.brew[Globals.num])
 	print(str("Profits:",Globals.bet+Globals.brew[Globals.num]))
 	print("Received:",Globals.brew[Globals.num])
